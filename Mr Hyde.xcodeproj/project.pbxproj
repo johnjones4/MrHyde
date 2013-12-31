@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF17A11B1872556F00BA55E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A11A1872556F00BA55E8 /* Cocoa.framework */; };
+		AF17A1251872556F00BA55E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF17A1231872556F00BA55E8 /* InfoPlist.strings */; };
+		AF17A1271872556F00BA55E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1261872556F00BA55E8 /* main.m */; };
+		AF17A12B1872556F00BA55E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF17A1291872556F00BA55E8 /* Credits.rtf */; };
+		AF17A12E1872556F00BA55E8 /* MrHydeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A12D1872556F00BA55E8 /* MrHydeAppDelegate.m */; };
+		AF17A1311872556F00BA55E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF17A12F1872556F00BA55E8 /* MainMenu.xib */; };
+		AF17A1341872556F00BA55E8 /* Mr_Hyde.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1321872556F00BA55E8 /* Mr_Hyde.xcdatamodeld */; };
+		AF17A1361872556F00BA55E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF17A1351872556F00BA55E8 /* Images.xcassets */; };
+		AF17A13D1872556F00BA55E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A13C1872556F00BA55E8 /* XCTest.framework */; };
+		AF17A13E1872556F00BA55E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A11A1872556F00BA55E8 /* Cocoa.framework */; };
+		AF17A1461872556F00BA55E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF17A1441872556F00BA55E8 /* InfoPlist.strings */; };
+		AF17A1481872556F00BA55E8 /* Mr_HydeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1471872556F00BA55E8 /* Mr_HydeTests.m */; };
+		AF17A1501872556F00BA55E8 /* Mr HydeImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = AF17A14D1872556F00BA55E8 /* Mr HydeImporter.mdimporter */; };
+		AF17A1521872556F00BA55E8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A1511872556F00BA55E8 /* CoreServices.framework */; };
+		AF17A1541872556F00BA55E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A1531872556F00BA55E8 /* CoreFoundation.framework */; };
+		AF17A1561872556F00BA55E8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A1551872556F00BA55E8 /* CoreData.framework */; };
+		AF17A1581872556F00BA55E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A1571872556F00BA55E8 /* Foundation.framework */; };
+		AF17A15E1872556F00BA55E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF17A15C1872556F00BA55E8 /* InfoPlist.strings */; };
+		AF17A1601872556F00BA55E8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AF17A15F1872556F00BA55E8 /* main.c */; };
+		AF17A1621872556F00BA55E8 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1611872556F00BA55E8 /* GetMetadataForFile.m */; };
+		AF17A1651872556F00BA55E8 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1641872556F00BA55E8 /* MySpotlightImporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF17A13F1872556F00BA55E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF17A10F1872556F00BA55E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF17A1161872556F00BA55E8;
+			remoteInfo = "Mr Hyde";
+		};
+		AF17A14E1872556F00BA55E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF17A10F1872556F00BA55E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF17A14C1872556F00BA55E8;
+			remoteInfo = "Mr HydeImporter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF17A1171872556F00BA55E8 /* Mr Hyde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr Hyde.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF17A11A1872556F00BA55E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AF17A11D1872556F00BA55E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AF17A11E1872556F00BA55E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AF17A11F1872556F00BA55E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF17A1221872556F00BA55E8 /* Mr Hyde-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mr Hyde-Info.plist"; sourceTree = "<group>"; };
+		AF17A1241872556F00BA55E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF17A1261872556F00BA55E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF17A1281872556F00BA55E8 /* Mr Hyde-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mr Hyde-Prefix.pch"; sourceTree = "<group>"; };
+		AF17A12A1872556F00BA55E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF17A12C1872556F00BA55E8 /* MrHydeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MrHydeAppDelegate.h; sourceTree = "<group>"; };
+		AF17A12D1872556F00BA55E8 /* MrHydeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MrHydeAppDelegate.m; sourceTree = "<group>"; };
+		AF17A1301872556F00BA55E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF17A1331872556F00BA55E8 /* Mr_Hyde.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mr_Hyde.xcdatamodel; sourceTree = "<group>"; };
+		AF17A1351872556F00BA55E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF17A13B1872556F00BA55E8 /* Mr HydeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mr HydeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF17A13C1872556F00BA55E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF17A1431872556F00BA55E8 /* Mr HydeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mr HydeTests-Info.plist"; sourceTree = "<group>"; };
+		AF17A1451872556F00BA55E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF17A1471872556F00BA55E8 /* Mr_HydeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mr_HydeTests.m; sourceTree = "<group>"; };
+		AF17A14D1872556F00BA55E8 /* Mr HydeImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mr HydeImporter.mdimporter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF17A1511872556F00BA55E8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		AF17A1531872556F00BA55E8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AF17A1551872556F00BA55E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AF17A1571872556F00BA55E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF17A15B1872556F00BA55E8 /* Mr HydeImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mr HydeImporter-Info.plist"; sourceTree = "<group>"; };
+		AF17A15D1872556F00BA55E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF17A15F1872556F00BA55E8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AF17A1611872556F00BA55E8 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		AF17A1631872556F00BA55E8 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		AF17A1641872556F00BA55E8 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		AF17A1661872556F00BA55E8 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		AF17A1671872556F00BA55E8 /* Mr HydeImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mr HydeImporter-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF17A1141872556F00BA55E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A11B1872556F00BA55E8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF17A1381872556F00BA55E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A13E1872556F00BA55E8 /* Cocoa.framework in Frameworks */,
+				AF17A13D1872556F00BA55E8 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF17A14A1872556F00BA55E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A1541872556F00BA55E8 /* CoreFoundation.framework in Frameworks */,
+				AF17A1561872556F00BA55E8 /* CoreData.framework in Frameworks */,
+				AF17A1521872556F00BA55E8 /* CoreServices.framework in Frameworks */,
+				AF17A1581872556F00BA55E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF17A10E1872556F00BA55E8 = {
+			isa = PBXGroup;
+			children = (
+				AF17A1201872556F00BA55E8 /* Mr Hyde */,
+				AF17A1411872556F00BA55E8 /* Mr HydeTests */,
+				AF17A1591872556F00BA55E8 /* Mr HydeImporter */,
+				AF17A1191872556F00BA55E8 /* Frameworks */,
+				AF17A1181872556F00BA55E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF17A1181872556F00BA55E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A1171872556F00BA55E8 /* Mr Hyde.app */,
+				AF17A13B1872556F00BA55E8 /* Mr HydeTests.xctest */,
+				AF17A14D1872556F00BA55E8 /* Mr HydeImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF17A1191872556F00BA55E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A11A1872556F00BA55E8 /* Cocoa.framework */,
+				AF17A13C1872556F00BA55E8 /* XCTest.framework */,
+				AF17A1511872556F00BA55E8 /* CoreServices.framework */,
+				AF17A1531872556F00BA55E8 /* CoreFoundation.framework */,
+				AF17A1551872556F00BA55E8 /* CoreData.framework */,
+				AF17A1571872556F00BA55E8 /* Foundation.framework */,
+				AF17A11C1872556F00BA55E8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF17A11C1872556F00BA55E8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A11D1872556F00BA55E8 /* AppKit.framework */,
+				AF17A11E1872556F00BA55E8 /* CoreData.framework */,
+				AF17A11F1872556F00BA55E8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AF17A1201872556F00BA55E8 /* Mr Hyde */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A12C1872556F00BA55E8 /* MrHydeAppDelegate.h */,
+				AF17A12D1872556F00BA55E8 /* MrHydeAppDelegate.m */,
+				AF17A12F1872556F00BA55E8 /* MainMenu.xib */,
+				AF17A1351872556F00BA55E8 /* Images.xcassets */,
+				AF17A1321872556F00BA55E8 /* Mr_Hyde.xcdatamodeld */,
+				AF17A1211872556F00BA55E8 /* Supporting Files */,
+			);
+			path = "Mr Hyde";
+			sourceTree = "<group>";
+		};
+		AF17A1211872556F00BA55E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A1221872556F00BA55E8 /* Mr Hyde-Info.plist */,
+				AF17A1231872556F00BA55E8 /* InfoPlist.strings */,
+				AF17A1261872556F00BA55E8 /* main.m */,
+				AF17A1281872556F00BA55E8 /* Mr Hyde-Prefix.pch */,
+				AF17A1291872556F00BA55E8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF17A1411872556F00BA55E8 /* Mr HydeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A1471872556F00BA55E8 /* Mr_HydeTests.m */,
+				AF17A1421872556F00BA55E8 /* Supporting Files */,
+			);
+			path = "Mr HydeTests";
+			sourceTree = "<group>";
+		};
+		AF17A1421872556F00BA55E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A1431872556F00BA55E8 /* Mr HydeTests-Info.plist */,
+				AF17A1441872556F00BA55E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF17A1591872556F00BA55E8 /* Mr HydeImporter */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A1611872556F00BA55E8 /* GetMetadataForFile.m */,
+				AF17A1631872556F00BA55E8 /* MySpotlightImporter.h */,
+				AF17A1641872556F00BA55E8 /* MySpotlightImporter.m */,
+				AF17A1661872556F00BA55E8 /* Importer Read Me.txt */,
+				AF17A15A1872556F00BA55E8 /* Supporting Files */,
+			);
+			path = "Mr HydeImporter";
+			sourceTree = "<group>";
+		};
+		AF17A15A1872556F00BA55E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A15B1872556F00BA55E8 /* Mr HydeImporter-Info.plist */,
+				AF17A15C1872556F00BA55E8 /* InfoPlist.strings */,
+				AF17A15F1872556F00BA55E8 /* main.c */,
+				AF17A1671872556F00BA55E8 /* Mr HydeImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF17A1161872556F00BA55E8 /* Mr Hyde */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF17A16D1872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr Hyde" */;
+			buildPhases = (
+				AF17A1131872556F00BA55E8 /* Sources */,
+				AF17A1141872556F00BA55E8 /* Frameworks */,
+				AF17A1151872556F00BA55E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF17A14F1872556F00BA55E8 /* PBXTargetDependency */,
+			);
+			name = "Mr Hyde";
+			productName = "Mr Hyde";
+			productReference = AF17A1171872556F00BA55E8 /* Mr Hyde.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF17A13A1872556F00BA55E8 /* Mr HydeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF17A1701872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr HydeTests" */;
+			buildPhases = (
+				AF17A1371872556F00BA55E8 /* Sources */,
+				AF17A1381872556F00BA55E8 /* Frameworks */,
+				AF17A1391872556F00BA55E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF17A1401872556F00BA55E8 /* PBXTargetDependency */,
+			);
+			name = "Mr HydeTests";
+			productName = "Mr HydeTests";
+			productReference = AF17A13B1872556F00BA55E8 /* Mr HydeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF17A14C1872556F00BA55E8 /* Mr HydeImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF17A16A1872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr HydeImporter" */;
+			buildPhases = (
+				AF17A1491872556F00BA55E8 /* Sources */,
+				AF17A14A1872556F00BA55E8 /* Frameworks */,
+				AF17A14B1872556F00BA55E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mr HydeImporter";
+			productName = "Mr HydeImporter";
+			productReference = AF17A14D1872556F00BA55E8 /* Mr HydeImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF17A10F1872556F00BA55E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MrHyde;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Phoenix4;
+				TargetAttributes = {
+					AF17A13A1872556F00BA55E8 = {
+						TestTargetID = AF17A1161872556F00BA55E8;
+					};
+				};
+			};
+			buildConfigurationList = AF17A1121872556F00BA55E8 /* Build configuration list for PBXProject "Mr Hyde" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF17A10E1872556F00BA55E8;
+			productRefGroup = AF17A1181872556F00BA55E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF17A1161872556F00BA55E8 /* Mr Hyde */,
+				AF17A13A1872556F00BA55E8 /* Mr HydeTests */,
+				AF17A14C1872556F00BA55E8 /* Mr HydeImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF17A1151872556F00BA55E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A1251872556F00BA55E8 /* InfoPlist.strings in Resources */,
+				AF17A1501872556F00BA55E8 /* Mr HydeImporter.mdimporter in Resources */,
+				AF17A1361872556F00BA55E8 /* Images.xcassets in Resources */,
+				AF17A12B1872556F00BA55E8 /* Credits.rtf in Resources */,
+				AF17A1311872556F00BA55E8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF17A1391872556F00BA55E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A1461872556F00BA55E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF17A14B1872556F00BA55E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A15E1872556F00BA55E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF17A1131872556F00BA55E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A1271872556F00BA55E8 /* main.m in Sources */,
+				AF17A1341872556F00BA55E8 /* Mr_Hyde.xcdatamodeld in Sources */,
+				AF17A12E1872556F00BA55E8 /* MrHydeAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF17A1371872556F00BA55E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A1481872556F00BA55E8 /* Mr_HydeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF17A1491872556F00BA55E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17A1651872556F00BA55E8 /* MySpotlightImporter.m in Sources */,
+				AF17A1601872556F00BA55E8 /* main.c in Sources */,
+				AF17A1621872556F00BA55E8 /* GetMetadataForFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF17A1401872556F00BA55E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF17A1161872556F00BA55E8 /* Mr Hyde */;
+			targetProxy = AF17A13F1872556F00BA55E8 /* PBXContainerItemProxy */;
+		};
+		AF17A14F1872556F00BA55E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF17A14C1872556F00BA55E8 /* Mr HydeImporter */;
+			targetProxy = AF17A14E1872556F00BA55E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF17A1231872556F00BA55E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17A1241872556F00BA55E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF17A1291872556F00BA55E8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17A12A1872556F00BA55E8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF17A12F1872556F00BA55E8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17A1301872556F00BA55E8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF17A1441872556F00BA55E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17A1451872556F00BA55E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF17A15C1872556F00BA55E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17A15D1872556F00BA55E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF17A1681872556F00BA55E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF17A1691872556F00BA55E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AF17A16B1872556F00BA55E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mr HydeImporter/Mr HydeImporter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mr HydeImporter/Mr HydeImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		AF17A16C1872556F00BA55E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mr HydeImporter/Mr HydeImporter-Prefix.pch";
+				INFOPLIST_FILE = "Mr HydeImporter/Mr HydeImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		AF17A16E1872556F00BA55E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mr Hyde/Mr Hyde-Prefix.pch";
+				INFOPLIST_FILE = "Mr Hyde/Mr Hyde-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF17A16F1872556F00BA55E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mr Hyde/Mr Hyde-Prefix.pch";
+				INFOPLIST_FILE = "Mr Hyde/Mr Hyde-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF17A1711872556F00BA55E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mr Hyde.app/Contents/MacOS/Mr Hyde";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mr Hyde/Mr Hyde-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mr HydeTests/Mr HydeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF17A1721872556F00BA55E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mr Hyde.app/Contents/MacOS/Mr Hyde";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mr Hyde/Mr Hyde-Prefix.pch";
+				INFOPLIST_FILE = "Mr HydeTests/Mr HydeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF17A1121872556F00BA55E8 /* Build configuration list for PBXProject "Mr Hyde" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF17A1681872556F00BA55E8 /* Debug */,
+				AF17A1691872556F00BA55E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF17A16A1872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr HydeImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF17A16B1872556F00BA55E8 /* Debug */,
+				AF17A16C1872556F00BA55E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF17A16D1872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr Hyde" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF17A16E1872556F00BA55E8 /* Debug */,
+				AF17A16F1872556F00BA55E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF17A1701872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr HydeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF17A1711872556F00BA55E8 /* Debug */,
+				AF17A1721872556F00BA55E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF17A1321872556F00BA55E8 /* Mr_Hyde.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF17A1331872556F00BA55E8 /* Mr_Hyde.xcdatamodel */,
+			);
+			currentVersion = AF17A1331872556F00BA55E8 /* Mr_Hyde.xcdatamodel */;
+			path = Mr_Hyde.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF17A10F1872556F00BA55E8 /* Project object */;
+}
