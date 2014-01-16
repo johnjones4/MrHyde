@@ -7,6 +7,8 @@
 //
 
 #import "MrHydeAppDelegate.h"
+#import "Site.h"
+#import "MrHydeSiteWindowController.h"
 
 @implementation MrHydeAppDelegate
 
@@ -16,7 +18,18 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    self.siteWindows = [[NSMutableDictionary alloc] init];
+    [self refreshData];
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    [notificationCenter addObserver:self selector:@selector(handleSaveNotification:) name:NSManagedObjectContextDidSaveNotification object:self.managedObjectContext];
+}
+
+- (void)applicationDidBecomeActive:(NSNotification *)aNotification {
+    [self.window makeKeyAndOrderFront:self];
+}
+
+- (void)handleSaveNotification:(NSNotification *)notification {
+    [self refreshData];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.phoenix4.Mr_Hyde" in the user's Application Support directory.
@@ -178,6 +191,151 @@
     }
 
     return NSTerminateNow;
+}
+
+- (void)refreshData {
+    [self.tableView setTarget:self];
+    [self.tableView setDoubleAction:@selector(openSite)];
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Site" inManagedObjectContext:self.managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    [request setSortDescriptors:self.tableView.sortDescriptors];
+    NSError *error;
+    NSArray *array = [self.managedObjectContext executeFetchRequest:request error:&error];
+    if (array != nil) {
+        self.sites = array;
+        [self.tableView reloadData];
+    }
+}
+
+#pragma mark - NSTableViewDelegate
+
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
+    [self.deleteSiteButton setEnabled: self.tableView.selectedRowIndexes.count > 0];
+}
+
+- (BOOL)tableView:(NSTableView *)aTableView shouldEditTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+    return false;
+}
+
+#pragma mark - NSTableViewDataSource
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
+    return self.sites.count;
+}
+
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+    Site* site = [self.sites objectAtIndex:rowIndex];
+    return [site valueForKey:aTableColumn.identifier];
+}
+
+- (void)tableView:(NSTableView *)aTableView sortDescriptorsDidChange:(NSArray *)oldDescriptors {
+    [self refreshData];
+}
+
+#pragma mark - actions
+
+- (IBAction)deleteSite:(id)sender {
+    NSIndexSet* set = self.tableView.selectedRowIndexes;
+    [set enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
+        Site* site = [self.sites objectAtIndex:idx];
+        [self.managedObjectContext deleteObject:site];
+        [self.managedObjectContext save:nil];
+    }];
+}
+
+- (IBAction)addSite:(id)sender {
+    [NSApp beginSheet:self.addSitePanel modalForWindow:self.tableView.window modalDelegate:self didEndSelector:@selector(didEndSheet:returnCode:contextInfo:) contextInfo:nil];
+}
+
+- (IBAction)addSheetCanceled:(id)sender {
+    [NSApp endSheet:self.addSitePanel];
+}
+
+- (IBAction)addSheetCompleted:(id)sender {
+    NSString* ident = self.addSiteTabs.selectedTabViewItem.identifier;
+    if ([ident isEqualToString:@"new"]) {
+        NSString* path = self.anewSitePathField.stringValue;
+        NSString* name = self.anewSiteNameField.stringValue;
+        Site* site = [NSEntityDescription insertNewObjectForEntityForName:@"Site" inManagedObjectContext:self.managedObjectContext];
+        site.path = path;
+        site.name = name;
+        NSError* initError;
+        if ([site initializeNewSite:&initError]) {
+            [self.managedObjectContext save:nil];
+            [NSApp endSheet:self.addSitePanel];
+            [self openWindowForSite:site];
+        } else if (initError) {
+            NSAlert *alert = [[NSAlert alloc] init];
+            [alert addButtonWithTitle:@"OK"];
+            alert.messageText = initError.localizedDescription;
+            alert.alertStyle = NSCriticalAlertStyle;
+            [alert runModal];
+            [self.managedObjectContext deleteObject:site];
+        }
+    } else if ([ident isEqualToString:@"existing"]) {
+        NSString* path = self.existingSitePathField.stringValue;
+        Site* site = [NSEntityDescription insertNewObjectForEntityForName:@"Site" inManagedObjectContext:self.managedObjectContext];
+        site.path = path;
+        NSError* initError;
+        if ([site initializeExistingSite:&initError]) {
+            [self.managedObjectContext save:nil];
+            [NSApp endSheet:self.addSitePanel];
+            [self openWindowForSite:site];
+        } else if (initError) {
+            NSAlert *alert = [[NSAlert alloc] init];
+            [alert addButtonWithTitle:@"OK"];
+            alert.messageText = initError.localizedDescription;
+            alert.alertStyle = NSCriticalAlertStyle;
+            [alert runModal];
+            [self.managedObjectContext deleteObject:site];
+        }
+    }
+}
+
+- (IBAction)newSitePathButtonSelected:(id)sender {
+    NSOpenPanel* panel = [NSOpenPanel openPanel];
+    panel.canChooseDirectories = YES;
+    panel.canChooseFiles = NO;
+    [panel beginWithCompletionHandler:^(NSInteger result) {
+        self.anewSitePathField.stringValue = panel.directoryURL.path;
+    }];
+}
+
+- (IBAction)existingSitePathButtonSelected:(id)sender {
+    NSOpenPanel* panel = [NSOpenPanel openPanel];
+    panel.canChooseDirectories = YES;
+    panel.canChooseFiles = NO;
+    [panel beginWithCompletionHandler:^(NSInteger result) {
+        self.existingSitePathField.stringValue = panel.directoryURL.path;
+    }];
+}
+
+- (void)didEndSheet:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
+    [sheet orderOut:self];
+}
+
+- (void)openSite {
+    NSInteger i = self.tableView.clickedRow;
+    if (i < self.sites.count) {
+        Site* site = [self.sites objectAtIndex:i];
+        [self openWindowForSite:site];
+    }
+}
+
+- (void)openWindowForSite:(Site*)site {
+    NSString* key = site.objectID.URIRepresentation.description;
+    MrHydeSiteWindowController* controller = [self.siteWindows objectForKey:key];
+    if (controller) {
+        [controller.window makeKeyAndOrderFront:self];
+    } else {
+        controller = [[MrHydeSiteWindowController alloc] initWithWindowNibName:@"Site"];
+        controller.site = site;
+        [self.siteWindows setValue:controller forKey:key];
+        [controller showWindow:self];
+        [controller.window makeKeyAndOrderFront:self];
+    }
 }
 
 @end

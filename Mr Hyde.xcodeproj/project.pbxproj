@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0661304F0DED45429002CFEA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 488AE99DC4924ADF82968D7C /* libPods.a */; };
 		AF17A11B1872556F00BA55E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17A11A1872556F00BA55E8 /* Cocoa.framework */; };
 		AF17A1251872556F00BA55E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF17A1231872556F00BA55E8 /* InfoPlist.strings */; };
 		AF17A1271872556F00BA55E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1261872556F00BA55E8 /* main.m */; };
@@ -28,6 +29,15 @@
 		AF17A1601872556F00BA55E8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AF17A15F1872556F00BA55E8 /* main.c */; };
 		AF17A1621872556F00BA55E8 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1611872556F00BA55E8 /* GetMetadataForFile.m */; };
 		AF17A1651872556F00BA55E8 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17A1641872556F00BA55E8 /* MySpotlightImporter.m */; };
+		AF2C07251879F34C009DD239 /* PageFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2C07241879F34C009DD239 /* PageFolder.m */; };
+		AF2C0728187A3F9D009DD239 /* NSString+AZInflections.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0727187A3F9D009DD239 /* NSString+AZInflections.m */; };
+		AF46143E1873355800B940B4 /* Deployment.m in Sources */ = {isa = PBXBuildFile; fileRef = AF46143D1873355800B940B4 /* Deployment.m */; };
+		AF4614411873355900B940B4 /* Site.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4614401873355900B940B4 /* Site.m */; };
+		AF4614441874AF2100B940B4 /* Site.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4614421874AF2100B940B4 /* Site.xib */; };
+		AF4614471874AF5D00B940B4 /* MrHydeSiteWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4614461874AF5D00B940B4 /* MrHydeSiteWindowController.m */; };
+		AFDB8FD71876531600C969C1 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8FD61876531600C969C1 /* Page.m */; };
+		AFDB8FDA1876532400C969C1 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8FD91876532400C969C1 /* Post.m */; };
+		AFDB8FDE187663B200C969C1 /* NSArray+ContainsNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8FDD187663B200C969C1 /* NSArray+ContainsNSString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		488AE99DC4924ADF82968D7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B04C82EFC049F3B9AB5712 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AF17A1171872556F00BA55E8 /* Mr Hyde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr Hyde.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF17A11A1872556F00BA55E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AF17A11D1872556F00BA55E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -81,6 +93,23 @@
 		AF17A1641872556F00BA55E8 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		AF17A1661872556F00BA55E8 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
 		AF17A1671872556F00BA55E8 /* Mr HydeImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mr HydeImporter-Prefix.pch"; sourceTree = "<group>"; };
+		AF2C07231879F34C009DD239 /* PageFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageFolder.h; sourceTree = "<group>"; };
+		AF2C07241879F34C009DD239 /* PageFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageFolder.m; sourceTree = "<group>"; };
+		AF2C0726187A3F9D009DD239 /* NSString+AZInflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AZInflections.h"; sourceTree = "<group>"; };
+		AF2C0727187A3F9D009DD239 /* NSString+AZInflections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AZInflections.m"; sourceTree = "<group>"; };
+		AF46143C1873355800B940B4 /* Deployment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deployment.h; sourceTree = "<group>"; };
+		AF46143D1873355800B940B4 /* Deployment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deployment.m; sourceTree = "<group>"; };
+		AF46143F1873355900B940B4 /* Site.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Site.h; sourceTree = "<group>"; };
+		AF4614401873355900B940B4 /* Site.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Site.m; sourceTree = "<group>"; };
+		AF4614431874AF2100B940B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Site.xib; sourceTree = "<group>"; };
+		AF4614451874AF5D00B940B4 /* MrHydeSiteWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrHydeSiteWindowController.h; sourceTree = "<group>"; };
+		AF4614461874AF5D00B940B4 /* MrHydeSiteWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MrHydeSiteWindowController.m; sourceTree = "<group>"; };
+		AFDB8FD51876531600C969C1 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		AFDB8FD61876531600C969C1 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		AFDB8FD81876532400C969C1 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		AFDB8FD91876532400C969C1 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		AFDB8FDC187663B200C969C1 /* NSArray+ContainsNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ContainsNSString.h"; sourceTree = "<group>"; };
+		AFDB8FDD187663B200C969C1 /* NSArray+ContainsNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ContainsNSString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF17A11B1872556F00BA55E8 /* Cocoa.framework in Frameworks */,
+				0661304F0DED45429002CFEA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +153,7 @@
 				AF17A1591872556F00BA55E8 /* Mr HydeImporter */,
 				AF17A1191872556F00BA55E8 /* Frameworks */,
 				AF17A1181872556F00BA55E8 /* Products */,
+				81B04C82EFC049F3B9AB5712 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +177,7 @@
 				AF17A1551872556F00BA55E8 /* CoreData.framework */,
 				AF17A1571872556F00BA55E8 /* Foundation.framework */,
 				AF17A11C1872556F00BA55E8 /* Other Frameworks */,
+				488AE99DC4924ADF82968D7C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,9 +195,7 @@
 		AF17A1201872556F00BA55E8 /* Mr Hyde */ = {
 			isa = PBXGroup;
 			children = (
-				AF17A12C1872556F00BA55E8 /* MrHydeAppDelegate.h */,
-				AF17A12D1872556F00BA55E8 /* MrHydeAppDelegate.m */,
-				AF17A12F1872556F00BA55E8 /* MainMenu.xib */,
+				AF17A17C187307BC00BA55E8 /* Code */,
 				AF17A1351872556F00BA55E8 /* Images.xcassets */,
 				AF17A1321872556F00BA55E8 /* Mr_Hyde.xcdatamodeld */,
 				AF17A1211872556F00BA55E8 /* Supporting Files */,
@@ -176,6 +206,7 @@
 		AF17A1211872556F00BA55E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF17A1791873073100BA55E8 /* XIBs */,
 				AF17A1221872556F00BA55E8 /* Mr Hyde-Info.plist */,
 				AF17A1231872556F00BA55E8 /* InfoPlist.strings */,
 				AF17A1261872556F00BA55E8 /* main.m */,
@@ -226,6 +257,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AF17A1791873073100BA55E8 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A12F1872556F00BA55E8 /* MainMenu.xib */,
+				AF4614421874AF2100B940B4 /* Site.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		AF17A17C187307BC00BA55E8 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB8FDB1876639000C969C1 /* Categories */,
+				AF17A17D187307C300BA55E8 /* Data */,
+				AF17A17E187307CE00BA55E8 /* UI */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		AF17A17D187307C300BA55E8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF46143F1873355900B940B4 /* Site.h */,
+				AF4614401873355900B940B4 /* Site.m */,
+				AF46143C1873355800B940B4 /* Deployment.h */,
+				AF46143D1873355800B940B4 /* Deployment.m */,
+				AFDB8FD51876531600C969C1 /* Page.h */,
+				AFDB8FD61876531600C969C1 /* Page.m */,
+				AFDB8FD81876532400C969C1 /* Post.h */,
+				AFDB8FD91876532400C969C1 /* Post.m */,
+				AF2C07231879F34C009DD239 /* PageFolder.h */,
+				AF2C07241879F34C009DD239 /* PageFolder.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AF17A17E187307CE00BA55E8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AF17A12C1872556F00BA55E8 /* MrHydeAppDelegate.h */,
+				AF17A12D1872556F00BA55E8 /* MrHydeAppDelegate.m */,
+				AF4614451874AF5D00B940B4 /* MrHydeSiteWindowController.h */,
+				AF4614461874AF5D00B940B4 /* MrHydeSiteWindowController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AFDB8FDB1876639000C969C1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB8FDC187663B200C969C1 /* NSArray+ContainsNSString.h */,
+				AFDB8FDD187663B200C969C1 /* NSArray+ContainsNSString.m */,
+				AF2C0726187A3F9D009DD239 /* NSString+AZInflections.h */,
+				AF2C0727187A3F9D009DD239 /* NSString+AZInflections.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,9 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF17A16D1872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr Hyde" */;
 			buildPhases = (
+				03D9E8655411487B8C49BC24 /* Check Pods Manifest.lock */,
 				AF17A1131872556F00BA55E8 /* Sources */,
 				AF17A1141872556F00BA55E8 /* Frameworks */,
 				AF17A1151872556F00BA55E8 /* Resources */,
+				32D97CBD0EDD4F54956A511F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +417,7 @@
 				AF17A1501872556F00BA55E8 /* Mr HydeImporter.mdimporter in Resources */,
 				AF17A1361872556F00BA55E8 /* Images.xcassets in Resources */,
 				AF17A12B1872556F00BA55E8 /* Credits.rtf in Resources */,
+				AF4614441874AF2100B940B4 /* Site.xib in Resources */,
 				AF17A1311872556F00BA55E8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,14 +440,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03D9E8655411487B8C49BC24 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32D97CBD0EDD4F54956A511F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF17A1131872556F00BA55E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF46143E1873355800B940B4 /* Deployment.m in Sources */,
+				AFDB8FD71876531600C969C1 /* Page.m in Sources */,
+				AF4614411873355900B940B4 /* Site.m in Sources */,
 				AF17A1271872556F00BA55E8 /* main.m in Sources */,
+				AFDB8FDE187663B200C969C1 /* NSArray+ContainsNSString.m in Sources */,
 				AF17A1341872556F00BA55E8 /* Mr_Hyde.xcdatamodeld in Sources */,
+				AF2C07251879F34C009DD239 /* PageFolder.m in Sources */,
 				AF17A12E1872556F00BA55E8 /* MrHydeAppDelegate.m in Sources */,
+				AF4614471874AF5D00B940B4 /* MrHydeSiteWindowController.m in Sources */,
+				AF2C0728187A3F9D009DD239 /* NSString+AZInflections.m in Sources */,
+				AFDB8FDA1876532400C969C1 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +564,14 @@
 				AF17A15D1872556F00BA55E8 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF4614421874AF2100B940B4 /* Site.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4614431874AF2100B940B4 /* Base */,
+			);
+			name = Site.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -542,6 +683,7 @@
 		};
 		AF17A16E1872556F00BA55E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B04C82EFC049F3B9AB5712 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -555,6 +697,7 @@
 		};
 		AF17A16F1872556F00BA55E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B04C82EFC049F3B9AB5712 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -625,6 +768,7 @@
 				AF17A16C1872556F00BA55E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF17A16D1872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr Hyde" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +777,7 @@
 				AF17A16F1872556F00BA55E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF17A1701872556F00BA55E8 /* Build configuration list for PBXNativeTarget "Mr HydeTests" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +786,7 @@
 				AF17A1721872556F00BA55E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
