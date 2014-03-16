@@ -1,12 +1,15 @@
 PODS:
+  - FTPManager (1.6.3)
   - LibYAML (0.1.4)
   - YAML-Framework (0.0.1):
     - LibYAML (~> 0.1.4)
 
 DEPENDENCIES:
+  - FTPManager (= 1.6.3)
   - YAML-Framework (= 0.0.1)
 
 SPEC CHECKSUMS:
+  FTPManager: 98182948237fecb69b996f3792caadb702d3fc49
   LibYAML: bf5d90eb17ab8006db821c000d68c1debf2a6ba8
   YAML-Framework: 4ada9225119ffb13a206f251fe4434e660bca16d
 

@@ -35,6 +35,9 @@
 		AF4614411873355900B940B4 /* Site.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4614401873355900B940B4 /* Site.m */; };
 		AF4614441874AF2100B940B4 /* Site.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4614421874AF2100B940B4 /* Site.xib */; };
 		AF4614471874AF5D00B940B4 /* MrHydeSiteWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4614461874AF5D00B940B4 /* MrHydeSiteWindowController.m */; };
+		AF9ED72F189434DA00AF6804 /* MrHydeFTPDeploymentWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9ED72E189434DA00AF6804 /* MrHydeFTPDeploymentWorker.m */; };
+		AFC6195618941E7300226D2B /* MrHydeDeploymentWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6195518941E7300226D2B /* MrHydeDeploymentWorker.m */; };
+		AFC6195C1894235D00226D2B /* MrHydeS3DeploymentWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC6195B1894235D00226D2B /* MrHydeS3DeploymentWorker.m */; };
 		AFDB8FD71876531600C969C1 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8FD61876531600C969C1 /* Page.m */; };
 		AFDB8FDA1876532400C969C1 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8FD91876532400C969C1 /* Post.m */; };
 		AFDB8FDE187663B200C969C1 /* NSArray+ContainsNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8FDD187663B200C969C1 /* NSArray+ContainsNSString.m */; };
@@ -104,6 +107,13 @@
 		AF4614431874AF2100B940B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Site.xib; sourceTree = "<group>"; };
 		AF4614451874AF5D00B940B4 /* MrHydeSiteWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrHydeSiteWindowController.h; sourceTree = "<group>"; };
 		AF4614461874AF5D00B940B4 /* MrHydeSiteWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MrHydeSiteWindowController.m; sourceTree = "<group>"; };
+		AF9ED72D189434DA00AF6804 /* MrHydeFTPDeploymentWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrHydeFTPDeploymentWorker.h; sourceTree = "<group>"; };
+		AF9ED72E189434DA00AF6804 /* MrHydeFTPDeploymentWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MrHydeFTPDeploymentWorker.m; sourceTree = "<group>"; };
+		AFC6195418941E7300226D2B /* MrHydeDeploymentWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrHydeDeploymentWorker.h; sourceTree = "<group>"; };
+		AFC6195518941E7300226D2B /* MrHydeDeploymentWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MrHydeDeploymentWorker.m; sourceTree = "<group>"; };
+		AFC6195A1894235D00226D2B /* MrHydeS3DeploymentWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrHydeS3DeploymentWorker.h; sourceTree = "<group>"; };
+		AFC6195B1894235D00226D2B /* MrHydeS3DeploymentWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MrHydeS3DeploymentWorker.m; sourceTree = "<group>"; };
+		AFC61978189425C600226D2B /* ConnectionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConnectionKit.framework; path = ConnectionKit/build/Debug/ConnectionKit.framework; sourceTree = "<group>"; };
 		AFDB8FD51876531600C969C1 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
 		AFDB8FD61876531600C969C1 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
 		AFDB8FD81876532400C969C1 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 		AF17A1191872556F00BA55E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFC61978189425C600226D2B /* ConnectionKit.framework */,
 				AF17A11A1872556F00BA55E8 /* Cocoa.framework */,
 				AF17A13C1872556F00BA55E8 /* XCTest.framework */,
 				AF17A1511872556F00BA55E8 /* CoreServices.framework */,
@@ -279,6 +290,7 @@
 		AF17A17D187307C300BA55E8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AFC6195318941BB600226D2B /* Deployement Workers */,
 				AF46143F1873355900B940B4 /* Site.h */,
 				AF4614401873355900B940B4 /* Site.m */,
 				AF46143C1873355800B940B4 /* Deployment.h */,
@@ -302,6 +314,20 @@
 				AF4614461874AF5D00B940B4 /* MrHydeSiteWindowController.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AFC6195318941BB600226D2B /* Deployement Workers */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6195418941E7300226D2B /* MrHydeDeploymentWorker.h */,
+				AFC6195518941E7300226D2B /* MrHydeDeploymentWorker.m */,
+				AFC6195A1894235D00226D2B /* MrHydeS3DeploymentWorker.h */,
+				AFC6195B1894235D00226D2B /* MrHydeS3DeploymentWorker.m */,
+				AF9ED72D189434DA00AF6804 /* MrHydeFTPDeploymentWorker.h */,
+				AF9ED72E189434DA00AF6804 /* MrHydeFTPDeploymentWorker.m */,
+			);
+			name = "Deployement Workers";
+			path = "Deployment Workers";
 			sourceTree = "<group>";
 		};
 		AFDB8FDB1876639000C969C1 /* Categories */ = {
@@ -481,13 +507,16 @@
 				AF46143E1873355800B940B4 /* Deployment.m in Sources */,
 				AFDB8FD71876531600C969C1 /* Page.m in Sources */,
 				AF4614411873355900B940B4 /* Site.m in Sources */,
+				AFC6195618941E7300226D2B /* MrHydeDeploymentWorker.m in Sources */,
 				AF17A1271872556F00BA55E8 /* main.m in Sources */,
 				AFDB8FDE187663B200C969C1 /* NSArray+ContainsNSString.m in Sources */,
 				AF17A1341872556F00BA55E8 /* Mr_Hyde.xcdatamodeld in Sources */,
 				AF2C07251879F34C009DD239 /* PageFolder.m in Sources */,
 				AF17A12E1872556F00BA55E8 /* MrHydeAppDelegate.m in Sources */,
+				AFC6195C1894235D00226D2B /* MrHydeS3DeploymentWorker.m in Sources */,
 				AF4614471874AF5D00B940B4 /* MrHydeSiteWindowController.m in Sources */,
 				AF2C0728187A3F9D009DD239 /* NSString+AZInflections.m in Sources */,
+				AF9ED72F189434DA00AF6804 /* MrHydeFTPDeploymentWorker.m in Sources */,
 				AFDB8FDA1876532400C969C1 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

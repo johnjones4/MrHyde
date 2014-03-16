@@ -1,0 +1,3 @@
+[submodule "ConnectionKit"]
+	path = ConnectionKit
+	url = https://github.com/karelia/ConnectionKit.git
